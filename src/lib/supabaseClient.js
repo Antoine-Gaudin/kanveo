@@ -6,7 +6,9 @@ const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
 // Vérification que les variables d'environnement sont bien définies
 if (!supabaseUrl || !supabaseAnonKey) {
-  throw new Error('Variables Supabase manquantes dans .env.local');
+  console.error('VITE_SUPABASE_URL:', supabaseUrl ? '✓' : '✗ manquante');
+  console.error('VITE_SUPABASE_ANON_KEY:', supabaseAnonKey ? '✓' : '✗ manquante');
+  throw new Error('Variables Supabase manquantes. Vérifiez vos variables d\'environnement (VITE_SUPABASE_URL et VITE_SUPABASE_ANON_KEY).');
 }
 
 // Singleton : éviter de créer plusieurs GoTrueClient lors du HMR Vite

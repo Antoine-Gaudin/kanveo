@@ -1,0 +1,33 @@
+# Kanveo - robots.txt
+User-agent: *
+
+# Pages publiques autorisées
+Allow: /
+Allow: /pricing
+Allow: /about
+Allow: /promo
+Allow: /terms
+Allow: /privacy
+Allow: /auth
+
+# Bloquer toutes les pages utilisateur/app
+Disallow: /dashboard
+Disallow: /sirene
+Disallow: /prospecting
+Disallow: /database
+Disallow: /settings
+Disallow: /docs
+Disallow: /tasks
+Disallow: /clients
+Disallow: /templates
+Disallow: /subscribe
+Disallow: /success
+Disallow: /checkout-success
+Disallow: /admin
+Disallow: /auth/callback
+
+# Bloquer les assets internes
+Disallow: /assets/
+
+# Sitemap
+Sitemap: https://kanveo.fr/sitemap.xml

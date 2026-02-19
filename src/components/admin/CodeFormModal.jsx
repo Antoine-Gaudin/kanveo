@@ -116,8 +116,9 @@ export default function CodeFormModal({ open, onOpenChange, onSave, code = null 
                 id="stripe_coupon_id"
                 value={form.stripe_coupon_id}
                 onChange={(e) => setForm(f => ({ ...f, stripe_coupon_id: e.target.value }))}
-                placeholder="Optionnel"
+                placeholder="ex: 0kmZNB4X (depuis le dashboard Stripe)"
               />
+              <p className="text-xs text-muted-foreground mt-1">ID du coupon Stripe lié à ce code promo (visible dans Produits → Coupons)</p>
             </div>
             <div>
               <Label htmlFor="max_uses">Utilisations max (vide = illimité)</Label>

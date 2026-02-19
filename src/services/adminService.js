@@ -46,7 +46,7 @@ export class AdminService {
         code: code.toUpperCase(),
         influencer_name,
         email: email || null,
-        stripe_coupon_id: stripe_coupon_id || 'GZD8vrdX',
+        stripe_coupon_id: stripe_coupon_id || null,
         max_uses: max_uses || null,
       }])
       .select()
